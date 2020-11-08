@@ -1,4 +1,4 @@
-# Binary
+# Binário
 
 Another important counting system is “binary”. Binary has only two possible digits for each place value: 0 and 1. A binary digit is also called a "bit". In assembly syntax, bits are prefixed by "%".
 

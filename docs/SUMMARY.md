@@ -7,25 +7,25 @@
 ## The basics
 
 * [Hexadecimal](the-basics/hexadecimal.md)
-* [Binary](the-basics/binary.md)
-* [The SNES memory](the-basics/memory.md)
-* [The SNES registers](the-basics/registers.md)
-* [Addressing modes](the-basics/addressing.md)
+* [Binário](the-basics/binary.md)
+* [A memória do SNES](the-basics/memory.md)
+* [Os registradores do SNES](the-basics/registers.md)
+* [Modos de Endereçamento](the-basics/addressing.md)
 * [Little-endian](the-basics/endian.md)
-* [Glossary](the-basics/glossary.md)
+* [Glossário](the-basics/glossary.md)
 
 ## The basics \(again\)
 
-* [Loading and storing](the-basics-again/loading-and-storing.md)
-* [Shorter addresses](the-basics-again/shorter-addresses.md)
-* [8-bit and 16-bit mode](the-basics-again/816.md)
-* [Comparing, branching, labels](the-basics-again/branches.md)
-* [Jumping to subroutines](the-basics-again/subroutine.md)
+* [Armazenando e Gravando](the-basics-again/loading-and-storing.md)
+* [Endereços curtos](the-basics-again/shorter-addresses.md)
+* [Modo 8-bit e 16-bit](the-basics-again/816.md)
+* [Comparadores, desvios e rótulos](the-basics-again/branches.md)
+* [Saltando para subrotinas](the-basics-again/subroutine.md)
 
 ## Collection of values
 
-* [Tables and indexing](collection-of-values/indexing.md)
-* [The stack](collection-of-values/stack.md)
+* [Tabelas e Indíces](collection-of-values/indexing.md)
+* [A Pilha](collection-of-values/stack.md)
 * [Copying data](collection-of-values/moves.md)
 
 ## Processor flags and registers

@@ -1,4 +1,4 @@
-# Comparing, branching, labels
+# Comparadores, desvios e rótulos
 
 You can run certain pieces of code depending on certain conditions. For this, you'll have to make use of comparison and branching opcodes. Comparison opcodes compare the contents of A, X or Y with another value. A branching opcode then controls the program flow, depending on the comparison.
 

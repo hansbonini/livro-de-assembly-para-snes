@@ -1,4 +1,4 @@
-# Tables and indexing
+# Tabelas e Indíces
 
 Indexing is the act of accessing a _table of data_ from a certain offset, that offset being determined by an indexer. The registers X and Y are unmissable when it comes to indexing. They're called the 'indexer' registers, after all.
 

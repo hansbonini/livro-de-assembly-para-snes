@@ -1,4 +1,4 @@
-# Jumping to subroutines
+# Saltando para subrotinas
 
 What if you want to use the same code twice, but you don’t want to write, for example, the exact same 200 lines of codes again? You can turn code into "subroutines" and use jumping opcodes to run these subroutines. There are four jumping opcodes in total.
 

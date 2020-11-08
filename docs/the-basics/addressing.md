@@ -1,4 +1,4 @@
-# Addressing modes
+# Modos de Endereçamento
 
 There are different addressing modes in 65c816. Addressing modes are used to make opcodes access addresses and values differently, such as "indexed" or "direct indirect" \(explained later in this tutorial\). Using them wisely, you can access values and memory addresses in many ways. For example, you can immediately load a value into a register, such as A, or load a byte from the ROM into A. Keep in mind that not all the opcodes supports all the types of addressing modes. Here are some of the important addressing modes you’ll find yourself use very often.
 

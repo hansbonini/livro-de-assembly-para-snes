@@ -1,4 +1,4 @@
-# The stack
+# A Pilha
 
 The stack is a special type of 'table' which is located inside the SNES RAM. Imagine the stack as a stack of plates. You can only add \(push\) or remove \(pull/pop\) a plate from the top. You can visualize it as something like this:
 

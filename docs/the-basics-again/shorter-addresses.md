@@ -1,4 +1,4 @@
-# Shorter addresses
+# Endereços curtos
 
 It’s possible to shorten addresses, but there are prerequisites.
 

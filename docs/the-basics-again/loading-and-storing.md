@@ -1,4 +1,4 @@
-# Loading and storing
+# Armazenando e Gravando
 
 The first thing you definitely should know when starting off with assembly, is how to load and store data using various the SNES registers. The basic opcodes for loading and storing data are `LDA` and `STA`.
 

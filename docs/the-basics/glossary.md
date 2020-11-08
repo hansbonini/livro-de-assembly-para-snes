@@ -1,4 +1,4 @@
-# Glossary
+# Glossário
 
 Here are some definitions of the most commonly used terms throughout the tutorial. For the sake of context and continuity, it's best read from top to bottom.
 
