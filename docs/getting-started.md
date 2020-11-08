@@ -1,16 +1,16 @@
-# Getting started
+# Primeiros Passos
 
 ## IDE
 
-There are no dedicated IDEs for 65c816 assembly. You can use any ASCII editor, such as Notepad or VS Code. However, some people made various plugins for existing code editors to add extra features, such as syntax highlighting:
+Não existe uma opção de IDE dedicada exclusivamente para linguagem assembly 65c816. Você pode usar qualquer editor ASCII, como NOtepad ou VSCode. Entretanto, algumas pessoas desenvolveram vários plugins para os editores existentes que adicionam diversos recursos extras, como syntax highlighting \(realce de sintaxe\):
 
-* Josh Neta's "[65816 Assembly](https://marketplace.visualstudio.com/items?itemName=joshneta.65816-assembly)" plugin for VS Code
-* Vice's "[65816 SNES Assembly Language Server](https://marketplace.visualstudio.com/items?itemName=vicerust.snes-asm)" plugin for VS Code
-* MatthewCallis'  "[65xx Assembly Language Support](https://atom.io/packages/language-65asm)" for Atom
+* Plugin Josh Neta's "[65816 Assembly](https://marketplace.visualstudio.com/items?itemName=joshneta.65816-assembly)" para VS Code
+* Plugin Vice's "[65816 SNES Assembly Language Server](https://marketplace.visualstudio.com/items?itemName=vicerust.snes-asm)" para VS Code
+* MatthewCallis'  "[65xx Assembly Language Support](https://atom.io/packages/language-65asm)" para Atom
 
-Assembly files are generally saved with the file extension ".asm".
+Arquivos assembly podem ser gerados com a extensão ".asm" ou ".s".
 
-## Assemblers
+## Assembladores
 
-This tutorial uses syntax which is used by an assembler called "Asar", originally written by Alcaro, now maintained by various members of the SMW Central community. This assembler is hosted on SMW Central and can be downloaded [here](https://www.smwcentral.net/?p=section&a=details&id=19043). The GitHub repository of Asar can be found [here](https://github.com/RPGHacker/asar).
+Este tutorial é baseado sobre a sintaxe assembler usada pelo assemblador `Asar` , originalmente mantido pelo usuário Alcaro e atualmente pelos membro da comunidade SMW Central. Esse assemblador pode ser encontrado na SMW Central ou neste [link](https://www.smwcentral.net/?p=section&a=details&id=19043). Pode ser encontrado também em seu repositório GitHub: [https://github.com/RPGHacker/asar](https://github.com/RPGHacker/asar).
 

@@ -4,8 +4,9 @@ Inside the SNES memory, 16-bit and 24-bit values are always stored in "little-en
 
 24-bit values are no exception. Values, such as $123456, are stored in the memory as $56 $34 $12.
 
-You can write everything in normal ASM without worrying about little-endian, because everything is dealt with automatically by the SNES and the assembler! You can worry about little-endian when you deal with 16-bit values in 8-bit mode. 
+You can write everything in normal ASM without worrying about little-endian, because everything is dealt with automatically by the SNES and the assembler! You can worry about little-endian when you deal with 16-bit values in 8-bit mode.
 
-For example: if you ever store the value $1234 at address $7E0000, it is stored as $34 $12. Then, if you ever want to access the low byte of $1234 (which is $34), you would need to read $7E0000, NOT $7E0001.
+For example: if you ever store the value $1234 at address $7E0000, it is stored as $34 $12. Then, if you ever want to access the low byte of $1234 \(which is $34\), you would need to read $7E0000, NOT $7E0001.
 
 The concept of little-endian is especially important when dealing with “pointers”, which is explained later in this tutorial.
+

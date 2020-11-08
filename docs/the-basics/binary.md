@@ -6,7 +6,7 @@ A byte is made of eight “bits”. Because a binary digit has two possible valu
 
 For example, a byte can consist of the following bits: `1001 0110` or `1001 0101`. The first bit from the left is called “bit 7” and the final bit is called “bit 0”. They are NOT called bits 0-7, nor bits 8-1. Here's an overview:
 
-```
+```text
 Bit 7654 3210
 
     1001 0110
@@ -31,7 +31,7 @@ Note that there is a space inbetween 4 bits for easier readability, although ass
 
 The SNES is capable of working with both 8-bit and 16-bit numbers. While 8-bit numbers are called a byte, 16-bit numbers are called a "word". They would look like they have 16 bits in binary \(e.g. `10000101 11010101`, which is `$85D5` in hexadecimal\). In the case of 16-bit numbers, the leftmost bit is called “bit 15” while the rightmost bit is called “bit 0”:
 
-```
+```text
     1111 11             (read from top to bottom)            
 Bit 5432 1098 7654 3210
     1000 0101 1101 0101

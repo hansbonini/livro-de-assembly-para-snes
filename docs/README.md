@@ -1,17 +1,18 @@
-# Introduction
+# Introdução
 
-This tutorial is an online version of my 65c816 assembly tutorial which is hosted on [SMW Central](https://www.smwcentral.net/). I originally wrote this tutorial in order to teach the SMW Central community the 65c816 assembly language in plain English. Nowadays, it's read by various people in the ROM hacking scene in general. Therefore, I decided to open source this tutorial on GitHub, so that people can make improvements or translations.
+Esta é uma versão online do meu tutorial de assembly para 65c816 que está hospedado no [SMW Central](https://www.smwcentral.net/). Eu originalmente escrevi este tutorial para ensinar para os membros da comunidade [SMW Central](https://www.smwcentral.net/) a linguagem assembly 65c816 em inglês pleno. Atualmente, ele é lido por muitos pessoas da cena da ROMHacking em geral. Por isso, tomei a decisão de move-lo para o Github, para que pessoas possam fazer me 
 
-Although I'm a member of SMW Central, this tutorial is not associated with Super Mario World, thus this tutorial is not tailored towards that game. Instead, this tutorial can be applied in all SNES context.
+Todavia, mesmo sendo membro da SMW Central, esse tutorial não está associado com o jogo Super Mario World, ou seja, ele não foi feito especificamente para esse jogo. Podendo ser aplicado para o SNES em geral.
 
-## The language
+## A Linguagem
 
-65c816 assembly is the language used by the Super Nintendo Entertainment System's \(SNES\) Ricoh 5A22 chip. Breaking down the different parts of the acronym 65c816: 816 means that the processor can be either 8-bit mode or 16-bit mode. The c stands for CMOS, 65 means that this processor is from the 65xx CPU family. The processor is supposed to be pretty revolutionary for its time. This tutorial explains mnemonics/instructions \(i.e. opcodes\) and how to use them properly. This tutorial does not focus on SNES-specific topics, such as hardware registers.
+A linguagem assembly do 65C816 é usada pelo chip RICOH 5A22 do Super Nintendo Entertainment Syystem \(SNES\). Separando o acrônimo 65c816 em parte: `816` significa que o processador suporta tanto o modo 8-bit quanto o modo 16-bit. A letra `c` vem da sigla CMOS, enquanto `65` significa que é um processador da família 65xx. Um processador supostamente revolucionário para seu tempo. Esse  tutorial irá explicar mnemônicos/instruções e como usa-las adequadamente. Esse tutorial não foca em tópicos específicos da arquitetura SNES, como registradores de hardware.
 
-With 65c816 ASM you can code things for SNES games \(such as custom features for Super Mario World\). ASM is a 2nd generation programming language, which is low-level compared to C\# for example. It is readable machine code, which eventually gets translated into hexadecimal machine code. All the opcodes consist of 3 letters, along with various parameters.
+Com a linguagem assembly 65c816 você pode programar uma gama  de coisas específicas para jogos de SNES \(como novos recursos para o Super Mario World\). ASM é a segunda geração de linguagem de programação, considerada de baixo-nível quando comparada à C\# por exemplo. É o que conhecemos como código de máquina legível, que posteriormente será traduzido em código de máquina hexadecimal \(bytes\). Todos os opcodes consistem  em 3 letras, com ou sem parâmetros.
 
-## Special thanks
+## Agradecimentos Especiais
 
-Many special thanks go to the following people for reviewing the original tutorial on SMW Central: **[spigmike](https://www.smwcentral.net/?p=profile&id=132), [Roy](https://www.smwcentral.net/?p=profile&id=845), [smkdan](https://www.smwcentral.net/?p=profile&id=411), [S.N.N](https://www.smwcentral.net/?p=profile&id=23), [andy\_k\_250](https://www.smwcentral.net/?p=profile&id=67), [Domiok](https://www.smwcentral.net/?p=profile&id=7211), [reghrhre](https://www.smwcentral.net/?p=profile&id=4176), [ChaoticFox](https://www.smwcentral.net/?p=profile&id=3462), [Tails\_155](https://www.smwcentral.net/?p=profile&id=6151), [GreenHammerBro](https://www.smwcentral.net/?p=profile&id=18802), [Vitor Vilela](https://www.smwcentral.net/?p=profile&id=8251)**
+Meus agradecimento especiais as pessoas que revisaram o tutorial original postado no SMW Central: [**spigmike**](https://www.smwcentral.net/?p=profile&id=132)**,** [**Roy**](https://www.smwcentral.net/?p=profile&id=845)**,** [**smkdan**](https://www.smwcentral.net/?p=profile&id=411)**,** [**S.N.N**](https://www.smwcentral.net/?p=profile&id=23)**,** [**andy\_k\_250**](https://www.smwcentral.net/?p=profile&id=67)**,** [**Domiok**](https://www.smwcentral.net/?p=profile&id=7211)**,** [**reghrhre**](https://www.smwcentral.net/?p=profile&id=4176)**,** [**ChaoticFox**](https://www.smwcentral.net/?p=profile&id=3462)**,** [**Tails\_155**](https://www.smwcentral.net/?p=profile&id=6151)**,** [**GreenHammerBro**](https://www.smwcentral.net/?p=profile&id=18802)**,** [**Vitor Vilela**](https://www.smwcentral.net/?p=profile&id=8251)
 
-Many special thanks also go to the [contributors](https://github.com/Ersanio/snes-assembly-book/graphs/contributors) of this repository!
+Meu agradecimentos especiais aos [contribuidores](https://github.com/Ersanio/snes-assembly-book/graphs/contributors) deste repositório!
+
