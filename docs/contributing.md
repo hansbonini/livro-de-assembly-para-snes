@@ -9,7 +9,7 @@ Esses são convenções quanto ao estilo do documento.
 ### Tabelas
 
 * Sentenças e frases com células das tabelas não devem terminar com ponto. 
-* Tabelas introduzindo Opcodes devem ter as Instruções marcadas com negrito e pelo menos três colunas como visto no exemplo abaixo:
+* Tabelas introduzindo Instruções devem ter os Opcodes marcados com negrito e pelo menos três colunas como visto no exemplo abaixo:
 
 | Instrução | Nome Completo | Explicação |
 | :--- | :--- | :--- |

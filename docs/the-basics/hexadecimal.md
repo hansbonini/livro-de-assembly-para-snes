@@ -1,6 +1,6 @@
 # Hexadecimal
 
-To program in 65c816 ASM, you will need to grasp the basics of hexadecimal. Hexadecimal, also known as "hex", is a counting system much like decimal, which is the everyday counting system people use. In hexadecimal, there are additional 6 digits per place value, which are denoted through the values A-F, as seen in the table below.
+Para programar em ASM do 66c816, é necessário alguns conhecimentos básico sobre bases hexadecimais. Hexadecimal, mais conhecido por "hex", é uma base numérica assim como decimal, que as pessoas usam diariamente para contar. No hexadecimais, existe 6 dígitos adicionais, que são numerados de A até F como visto na tabela a seguir.
 
 | Decimal | Hexadecimal |
 | :--- | :--- |
@@ -25,19 +25,19 @@ To program in 65c816 ASM, you will need to grasp the basics of hexadecimal. Hexa
 | ... | ... |
 | 255 | FF |
 
-There are various ways to write hex numbers so readers cannot confuse them with actual decimal numbers. They are as follows:
+Existem várias formar de denotar valores hexadecimais para que os leitores não os confundam com valores decimais. Elas são:
 
-* Prefix hexadecimal numbers with "0x" \(e.g. 0x42\)
-* Prefix hexadecimal numbers with "$" \(e.g. $42\)
-* Sufffix hexadecimal numbers with "H" \(e.g. 42H\)
+* Valores hexadecimais precedidos por "0x" \(ex: 0x42\)
+* Valores hexadecimais precedidos por "$" \(ex: $42\)
+* Valores hexadecimais com o sufixo "H" \(exemplo 42H\)
 
-In this tutorial, the convention is to prefix hexadecimal numbers with "$".
+Por convenção este tutorial usa valores hexadecimais precedidos por "$".
 
-In assembly, a hexadecimal number with two digits is called a “byte”. This means that values between $00-$FF are considered a byte.
+Na linguagem assembly, um valor hexadecimal de dois digitos é chamado de "byte". O que significa que qualquer valor em um intervalo de $00 até $FF será considerado como um byte.
 
-## Signed and unsigned values
+## Valores signed e unsigned
 
-In the real world, numbers can be positive or negative. In assembly, depending on the code, values can be treated as "signed" or "unsigned". Signed values mean that they can also be negative: The value $80 and higher are considered to be negative numbers in decimal, starting from -128, and counting down as the hex number is counting up, as you can see in the table below.
+No mundo real, números podem ser positivos ou negativos. Na linguagem assembly, dependendo do código, valores podem ser tratados como "signed" ou "unsigned". "Signed" será atribuído a quaisquer valores que podem ser negativos: o valor $80 ou maior será considerado negativo caso a denotação for decimal, começando do valor -128, e contando regressivamente enquanto o valor hexadecimal conta progressivamente, como pode ser visto na tabela à seguir.
 
 | Decimal | Hexadecimal |
 | :--- | :--- |
@@ -48,11 +48,11 @@ In the real world, numbers can be positive or negative. In assembly, depending o
 | ... | ... |
 | -1 | $FF |
 
-The presence of negative numbers depends on the game’s programming. For example, a player can have positive and negative speed \(resulting in going forward or backward\), but a player cannot have negative extra lives or points \(because normally that doesn’t make sense\). Needless to say, the value -0 does not exist.
+A presença de valores negativo vai depende da programação do jogo. Por exemplo, um personagem pode ter velocidade positiva ou negativa \(como resultado avança ou recua\), mas o personagem não pode ter vidas negativas ou pontos \(porque não faria sentido algum\). Vale ressaltar que o valor -0 não existe.
 
-## Four-digit hexadecimal values
+## **Valores hexadecimais de 4 dígitos**
 
-Hexadecimal numbers can count well past two digits, as you can see below.
+Os valores hexadecimais podem contar além de dois dígitos, como você pode ver abaixo.
 
 | Decimal | Hexadecimal |
 | :--- | :--- |
@@ -63,8 +63,8 @@ Hexadecimal numbers can count well past two digits, as you can see below.
 | ... | ... |
 | 65535 | $FFFF |
 
-The format of such a hexadecimal number is as follows: $HHLL.
+O formato nesse caso é $HHLL
 
-* HH is the "high byte" of the number
-* LL is the "low byte" of the number
+* HH é o "high byte" do valor
+* LL é o "low byte" do valor
 
