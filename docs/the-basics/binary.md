@@ -1,10 +1,10 @@
 # Binário
 
-Another important counting system is “binary”. Binary has only two possible digits for each place value: 0 and 1. A binary digit is also called a "bit". In assembly syntax, bits are prefixed by "%".
+Outro base numérica importante é o sistema "binário". Em binários os dígitos podem ser apenas 2 valores: 0 ou 1. Um digito binário é chamador de "bit". E na linguagem assembly a denotação dos bits é precedida pelo carácter "%".
 
-A byte is made of eight “bits”. Because a binary digit has two possible values, and a byte has 8 bits, this means there are 2⁸ possible values in a byte.
+Um byte é constituído de oito "bits". Como um dígitos binário pode ser apenas dois valores, e um byte tem oito bits, existem 2⁸ possibilidades de byte.
 
-For example, a byte can consist of the following bits: `1001 0110` or `1001 0101`. The first bit from the left is called “bit 7” and the final bit is called “bit 0”. They are NOT called bits 0-7, nor bits 8-1. Here's an overview:
+Por exemplo, um byte composto pelos seguintes bits: `1001 0110` or `1001 0101`. O primeiro bit da esquerda para a direita é chamado de "bit 7" e o bit final é chamado de bit "0".
 
 ```text
 Bit 7654 3210
@@ -14,7 +14,7 @@ Bit 7654 3210
     .... ....
 ```
 
-The table below shows a relatively easy way to memorize binary.
+A tabela a seguir é basicamente fácil para memorizar binários.
 
 | Binary | Hexadecimal |
 | :--- | :--- |
@@ -27,12 +27,12 @@ The table below shows a relatively easy way to memorize binary.
 | `%0100 0000` | `$40` |
 | `%1000 0000` | `$80` |
 
-Note that there is a space inbetween 4 bits for easier readability, although assemblers generally don't accept this syntax. Groups of 4 bits are called "nibbles" and for the purposes of this chapter, they are there to make binary easier to read, because one nibble corresponds to one digit in hexadecimal.
+Note que aqui existe um espaço a cada 4 bits para tornar a leitura mais fácil, contudo, os assembladores não aceitam esse tipo de sintaxe. Grupos de 4 bits são chamados de "nibbles" e para o proósito desse capitulo, eles tornaram mais fácil para ler os binários. porque cada "nibble" corresponde à um digito em hexadecimal.
 
-The SNES is capable of working with both 8-bit and 16-bit numbers. While 8-bit numbers are called a byte, 16-bit numbers are called a "word". They would look like they have 16 bits in binary \(e.g. `10000101 11010101`, which is `$85D5` in hexadecimal\). In the case of 16-bit numbers, the leftmost bit is called “bit 15” while the rightmost bit is called “bit 0”:
+O SNES é capaz de trabalhar tanto no com valores 8-bit quanto valores 16-bit. Enquanto valores 8-bit são chamados de byte, valores 16-bit são chamados de "word". Que por sua vez estarão presentes dessa forma em binário:`10000101 11010101` \(que trata-se do valor `$85D5` na representação hexadecimal\). No caso de valores 16-bit o primeiro digito à esquerda é chamado de "bit 15" enquanto o último digito a direita é chamado de "bit 0":
 
 ```text
-    1111 11             (read from top to bottom)            
+    1111 11             (leia de cima para baixo)            
 Bit 5432 1098 7654 3210
     1000 0101 1101 0101
     0000 0000 1001 0110
@@ -78,7 +78,7 @@ Finally, here's an overview of how to count up in decimal, hexadecimal and binar
 | `254` | `$FE` | `%1111 1110` |
 | `255` | `$FF` | `%1111 1111` |
 
-## Notation
+## Notação
 
 Sometimes, bits could be written inconsistently, like `11` or `110 0000`. This makes the binary number harder to read, because the general convention is to write bits in groups of eight. In order to read them, you will need to add leading 0s to the digits until there are either 8 bits or 16 bits in total.
 
