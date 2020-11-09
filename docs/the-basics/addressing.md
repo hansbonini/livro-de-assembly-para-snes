@@ -1,30 +1,30 @@
 # Modos de Endereçamento
 
-There are different addressing modes in 65c816. Addressing modes are used to make opcodes access addresses and values differently, such as "indexed" or "direct indirect" \(explained later in this tutorial\). Using them wisely, you can access values and memory addresses in many ways. For example, you can immediately load a value into a register, such as A, or load a byte from the ROM into A. Keep in mind that not all the opcodes supports all the types of addressing modes. Here are some of the important addressing modes you’ll find yourself use very often.
+Existem diferentes modos de endereçamento no 65c816. Modos de endereçamento são usados para fazer com que as instruções acessem endereços e valores de diferentes formas, por exemplo, de forma "indexada" ou "direta indireta" \(explicado posteriormente neste livro\). Usando esses modos, você poderá acessar valores e endereços da memória de várias formas. Por exemplo, você pode imediatamente armazenar um valor em algum registrador, como o A. Tenha em mente que nem todos os modos são suportados por algumas instruções, existem algumas com um leque particular de modos de endereçamento. Os modos de endereçamento mais relevantes você encontra abaixo.
 
-## Immediate 8/16 bit
+## Imediato 8/16 bit
 
-This addressing mode defines an absolute value, which is written as `#$XX` in 8-bit mode, or `#$XXXX` in 16-bit mode. The \# means "immediate value", while the $ stands for hexadecimal. Using \# alone makes the input decimal. For example, \#10 is the same as \#$0A. Think of an immediate value as a number you're directly defining.
+Este modo de endereçamento define um valor absoluto, pode ser escrito usando a notação `#$XX` quando no modo 8-bit ou `#$XXXX` quando no modo 16-bit. O \# serve para indicar que é um "valor imediato", enquanto que $ é o indicador de valor hexadecimal. Usando somente \# fará com que o valor seja decimal. Por exemplo, \#10 é o mesmo que \#$0A. Pense no valor imediato como um número que você precisa anotar imediatamente em algum lugar.
 
-## Direct page
+## Paginação Direta
 
-This addressing mode defines a direct page address, which is written as `$XX`.
+Este modo de endereçamento define um endereço de página direto, pode ser escrito usando a notação  `$XX`.
 
-The direct page is the last 2 hex digits of a long address. For example, address $7E0011 as direct page would be $11. When loading from a direct page address, the bank byte is ALWAYS treated as $00, no exceptions. If you write “LDA $11” for example, you would load the contents of $000011 into the accumulator, which is also mirrored at $7E0011 \(remember the illustration of the SNES memory\). Therefor, you load $7E0011’s contents into A.
+A paginação direta será os dois últimos dígitos hexadecimais de um endereçamento long. Por exemplo, o endereço $7E0011 como paginação direta será $11. Quando armazenado a partir de paginação direta, o valor do banco será sempre $00, sem exceções. Se você escrever a instrução "LDA $11" por exemplo, irá carregar o conteúdo de $000011 no acumulador, que também pode estar espelhado em $7E0011 \(lembre-se da ilustração sobre a memória do SNES\). Ou seja, você armazena também o conteúdo de $7E0011 em A.
 
-## Absolute
+## Absoluto
 
-This addressing mode defines an absolute address, which is written as `$XXXX`.
+Este modo de endereçamento define um endereço absoluto, pode ser escrito usando a notação `$XXXX`.
 
-An absolute address is the last 4 hex digits of a long address. Using the example from earlier, address $7E0011 as an absolute address would be $0011. The bank byte of the absolute address is determined by the data bank register.
+O endereço absoluto será os últiimos 4 digitos hexadecimais de um endereço long. Usando o exemplo anterior, o endereço $7E0011 quando em endereçamento absoluto será $0011. O byte referente ao banco do endereço absoluto será determinado pelo registrador de banco de dados.
 
 ## Long
 
-This addressing mode defines a long address, which is written as `$XXXXXX`.
+Este modo de endereçamento define um endereço long, pose ser escrito usando a notação`$XXXXXX`.
 
-Long addresses deliver fewer complications when dealing with banks and mirroring. You also don’t have to worry about what the data bank register currently contains. With long addresses, you can access any address in the SNES memory.
+Endereços long tem algumas complicações quando se trabalha com bancos e espelhamento. Entretanto você não precisa se preocupar com o que o registrador de banco de dados está armazenando no momento. Com endereços long você pode acessar quaisquer endereços na memória do SNES.
 
-## Other addressing modes
+## Outros modos de endereçamento
 
-The SNES supports more addressing modes. The above addressing modes are the basics. There are also addressing modes, such as: indexed versions of direct page, absolute and long addresses, and much more. They will be explained near the end of this tutorial because you don’t need them at this point. It would make things only more confusing at the moment.
+O SNES suporta outros modos de endereçamento. Os endereçamentos apresentados anteriormente são os fundamentais. Porém, existem vários outros modos como: versões indexadas da paginação direta, absoluto e long, e outros. Eles serão explicados futuramente neste livro porque não convém didaticamente aprende-los por enquanto. Eles farão mais sentido no futuro.
 
