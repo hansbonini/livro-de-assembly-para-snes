@@ -1,18 +1,18 @@
 # Table of contents
 
 * [Introdução](README.md)
-* [Primeiros Passos](getting-started.md)
-* [Contribuindo](contributing.md)
+* [Primeiros Passos](primeiros-passos.md)
+* [Contribuindo](contribuindo.md)
 
-## The basics
+## Fundamentos Básicos
 
-* [Hexadecimal](the-basics/hexadecimal.md)
-* [Binário](the-basics/binary.md)
-* [A memória do SNES](the-basics/memory.md)
-* [Os registradores do SNES](the-basics/registers.md)
-* [Modos de Endereçamento](the-basics/addressing.md)
-* [Little-endian](the-basics/endian.md)
-* [Glossário](the-basics/glossary.md)
+* [Hexadecimal](fundamentos-basicos/hexadecimal.md)
+* [Binário](fundamentos-basicos/binary.md)
+* [A memória do SNES](fundamentos-basicos/memoria.md)
+* [Os registradores do SNES](fundamentos-basicos/registradores.md)
+* [Modos de Endereçamento](fundamentos-basicos/enderecamento.md)
+* [Little-endian](fundamentos-basicos/endian.md)
+* [Glossário](fundamentos-basicos/glossary.md)
 
 ## The basics \(again\)
 

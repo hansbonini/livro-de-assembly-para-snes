@@ -1,6 +1,6 @@
 # Addressing modes revisted
 
-In the [basic addressing modes](../the-basics/addressing.md) chapter, we briefly looked at the most commonly used addressing modes: 'Immediate 8-bit and 16-bit', 'direct page', 'absolute' and 'long'. In this chapter, we will look at the more advanced addressing modes: 'indirect', 'indexed' and 'stack relative'. These advanced addressing modes expand upon the earlier introduced addressing modes. This chapter also introduces the concept of pointers.
+In the [basic addressing modes](../fundamentos-basicos/enderecamento.md) chapter, we briefly looked at the most commonly used addressing modes: 'Immediate 8-bit and 16-bit', 'direct page', 'absolute' and 'long'. In this chapter, we will look at the more advanced addressing modes: 'indirect', 'indexed' and 'stack relative'. These advanced addressing modes expand upon the earlier introduced addressing modes. This chapter also introduces the concept of pointers.
 
 ## Pointers
 
