@@ -41,20 +41,20 @@ Bit 5432 1098 7654 3210
 
 ## Flags
 
-Binary is immensely useful when you’re giving a hex value multiple purposes, kind of like an on/off toggle for certain features. These bits are called "flags" and are generally used to save space in the working memory of games.
+Binários são altamente úteis quando você precisa especificar valores hexadecimais com propósitos variados, por exemplo uma opção de Liga/Desliga para certos recursos. Esses bits são chamados de "flags" e geralmente são salvos na memória dos jogos.
 
-For example, you can divide a byte into 8 bits with each bit having a different meaning. Bit 7 could indicate that a level has rain or not. Bit 6 could indicate that a level layout is horizontal or vertical. Bit 5 could indicate that the level setting is during day or night, etc. This way you can compress information into a single byte. It would look like this in binary:
+Para exemplificar, você pode dividir um byte em 8 bits com cada bit tendo uma função única. O bit 7 pode indicar se está ou não chovendo no estágio, Bit 6 pode indicar se o estágio é horizontal ou vertical. Bit 5 pode indicar se está de dia ou de noite, etc. Dessa forma você poderá compactar diversas informações em único byte. Abaixo um exemplo de como isso ocorre em binário:
 
 ```text
 10100000
-││└───── "Is daytime" flag
-│└───── "Is horizontal level" flag
-└───── "Is raining" flag
+││└───── flag "Está dia?"
+│└───── flag "O estágio é Horizontal"
+└───── flag "Está chovendo?"
 ```
 
-Finally, here's an overview of how to count up in decimal, hexadecimal and binary:
+Para finalizar, abaixo uma revisão de como contar em decimal, hexadecimal e binário:
 
-| Decimal | Hexadecimal | Binary |
+| Decimal | Hexadecimal | Binário |
 | :--- | :--- | :--- |
 | `00` | `$00` | `%0000 0000` |
 | `01` | `$01` | `%0000 0001` |
@@ -80,17 +80,17 @@ Finally, here's an overview of how to count up in decimal, hexadecimal and binar
 
 ## Notação
 
-Sometimes, bits could be written inconsistently, like `11` or `110 0000`. This makes the binary number harder to read, because the general convention is to write bits in groups of eight. In order to read them, you will need to add leading 0s to the digits until there are either 8 bits or 16 bits in total.
+Em algumas ocasiões a escrita de bits pode ser parcial, como `11` ou `110 0000`. Isso pode tornar o valor binário díficil de ler por que o convencional é escreve-los em grupos de 8 bits. Em todo caso, para ler, você precisa apenas adicionar zeros à esquerda do dígito até completar grupos de 8 ou 16-bits.
 
-In 8-bit:
+Em 8-bit:
 
-* `11` becomes `00000011`
-* `1100000` becomes `01100000`
+* `11` será `00000011`
+* `1100000` será `01100000`
 
-In 16-bit:
+Em 16-bit:
 
-* `11` becomes `00000000 00000011`
-* `1100000` becomes `00000000 01100000`
+* `11` será `00000000 00000011`
+* `1100000` será `00000000 01100000`
 
-You can convert between decimal, hexadecimal and binary, by using Windows calculator’s "programming" mode. There are also many calculators online which can do this. Assembly syntax accepts decimal numbers also, so you usually don't need to convert between decimal and hexadecimal.
+Você pode converter entre decimais, hexadecimais e binários usando a calculadora do seu sistema operacional no modo "Programação".  Existem várias calculadoras online também. A sintaxe da linguagem assemby aceita todas as bases numéricas, então você não precisa ficar convertendo entre elas em si.
 
