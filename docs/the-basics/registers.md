@@ -36,7 +36,7 @@ O registrador de estado do processador armazena as flags atuais do processador e
 
 ## Banco de Dados
 
-O registrador de banco de dados armazena o o valor do banco de dados atual em um único byte. Quando você acessa um endereço usando a notação de "endereçamento absoluto", o SNES irá usar esse registrador para determinar qual banco pertence esse endereço.
+O registrador de banco de dados armazena o o valor do banco atual em um único byte. Quando você acessa um endereço usando a notação de "endereçamento absoluto", o SNES irá usar esse registrador para determinar qual banco pertence esse endereço.
 
 ## Banco do Programa
 
