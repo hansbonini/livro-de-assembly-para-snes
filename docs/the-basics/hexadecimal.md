@@ -1,6 +1,6 @@
 # Hexadecimal
 
-Para programar em ASM do 66c816, é necessário alguns conhecimentos básico sobre bases hexadecimais. Hexadecimal, mais conhecido por "hex", é uma base numérica assim como decimal, que as pessoas usam diariamente para contar. No hexadecimais, existe 6 dígitos adicionais, que são numerados de A até F como visto na tabela a seguir.
+Para programar em ASM do 65c816, é necessário alguns conhecimentos básico sobre bases hexadecimais. Hexadecimal, mais conhecido por "hex", é uma base numérica assim como decimal, que as pessoas usam diariamente para contar. No hexadecimais, existe 6 dígitos adicionais, que são numerados de A até F como visto na tabela a seguir.
 
 | Decimal | Hexadecimal |
 | :--- | :--- |
