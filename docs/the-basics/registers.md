@@ -4,12 +4,12 @@ O SNES tem vários registradores usados para diferentes propósitos. Nenhum dele
 
 ## Acumulador
 
-O Acumulador também conhecido por **A,** geralmente é usado para operações matemáticas, deslocamento de bits, operações bitwise e carregar valores indiretos. A pode também armazenar variáveis de uso geral para posteriomente salva-las na memória ou em outros registradores. Esse registrador trabalha tanto com valores 8-bit quanto com valores 16-bit.
+O Acumulador também conhecido por **A,** geralmente é usado para operações matemáticas, deslocamento de bits, operações bitwise e carregar valores indiretos. A pode também armazenar variáveis de uso geral para posteriormente salva-las na memória ou em outros registradores. Esse registrador trabalha tanto com valores 8-bit quanto com valores 16-bit.
 
 O Acumulador algumas vezes é referenciado como  `B` ou `C` em algumas instruções. B trata-se do high byte do acumulador, enquanto C quer dizer que o acumulador é totalmente 16-bit.
 
 {% hint style="warning" %}
-Na realidade, o registrador pode ser considerado sempre de 16-bit. Quando A está no modo 8-Bit, você acessa seu low byte do registrador. Quando A está no modo 16-bit você acessa tanto o high byte quanto o low byte do registrador. O Hight byte não é zerado quando o registrador A entra no modo 8-bit, mesmo quando novos valores são escritos em A, o high byte vai ser considerado como um valor "escondido". Vale ressaltar também, que certas instruções usam ambos os valores high e low byte do registrado A, independente se ele estiver ou não no modo 8-bit ou 16-bit.
+Na realidade, o registrador pode ser considerado sempre de 16-bit. Quando A está no modo 8-Bit, você acessa seu low byte do registrador. Quando A está no modo 16-bit você acessa tanto o high byte quanto o low byte do registrador. O high byte não é zerado quando o registrador A entra no modo 8-bit, mesmo quando novos valores são escritos em A, o high byte vai ser considerado como um valor "escondido". Vale ressaltar também, que certas instruções usam ambos os valores high e low byte do registrado A, independente se ele estiver ou não no modo 8-bit ou 16-bit.
 {% endhint %}
 
 ## Indexados
@@ -32,11 +32,11 @@ O ponteiro de pilha é um registrador de 16-bit que armazena o ponteiro da pilha
 
 ## Estado do Processador
 
-O registrador de estado do processador armazena as flags atuais do processador em formato 8-bit. Existem 8 flags de processador e cada uma ocupa 1 bit. Alterando esse registrador irá alterar o funcionamento de todo o SNES. As flags do processador seram explicadas porteriomente neste livro.
+O registrador de estado do processador armazena as flags atuais do processador em formato 8-bit. Existem 8 flags de processador e cada uma ocupa 1 bit. Alterando esse registrador irá alterar o funcionamento de todo o SNES. As flags do processador serão explicadas posteriormente neste livro.
 
 ## Banco de Dados
 
-O registrador de banco de dados armazena o o valor do banco de dados atual em um único byte. Quando você acessa um endereço usando a notação de "enderaçamento absoluto", o SNES irá usar esse registrador para determinar qual banco pertence esse endereço.
+O registrador de banco de dados armazena o o valor do banco de dados atual em um único byte. Quando você acessa um endereço usando a notação de "endereçamento absoluto", o SNES irá usar esse registrador para determinar qual banco pertence esse endereço.
 
 ## Banco do Programa
 
