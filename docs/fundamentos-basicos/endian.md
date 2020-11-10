@@ -1,12 +1,12 @@
 # Little-endian
 
-Inside the SNES memory, 16-bit and 24-bit values are always stored in "little-endian". Take for example the value $1234 which we store in the RAM; $1234 does not appear as $12 $34. It appears as $34 $12, instead. This is how the SNES works. When this number is read in 16-bit mode, it reads $1234, NOT $3412. The SNES reverses this automatically again.
+Dentro da memória do SNES, valores 16-bit e 24-bit são escritos sempre em "little-endian". Vamos usar como exemplo o valor $1234 que está salvo na RAM; $1234 não estará visível na memória, como $12 $34  e sim como, $34 $12. É dessa forma que o SNES trabalha. Quando um numero é lido no modo 16-bit, ele interpretara como $1234 não como $3412 como aparece na memória. O SNES faz essa inversão dos valores de forma automática.
 
-24-bit values are no exception. Values, such as $123456, are stored in the memory as $56 $34 $12.
+Valores de 24-bit não são exceção. Valores como $123456, serão salvos na memória como $56 $34 $12.
 
-You can write everything in normal ASM without worrying about little-endian, because everything is dealt with automatically by the SNES and the assembler! You can worry about little-endian when you deal with 16-bit values in 8-bit mode.
+Você pode escrever tudo normalmente em ASM sem se preocupar com o sistema "little-endian", porque tudo é manipulado automaticamente pelo SNES e pelo Assemblador. Você precisará apenas se preocupar quando for manipular valores 16-bit no modo 8-bit.
 
-For example: if you ever store the value $1234 at address $7E0000, it is stored as $34 $12. Then, if you ever want to access the low byte of $1234 \(which is $34\), you would need to read $7E0000, NOT $7E0001.
+Por exemplo: se você salvar o valor $1234 no endereço $7E0000, na memória vai estar salvo $34 $12. Então, se você quiser acessar o low byte desse valor \(que é $34\) você precisará ler $7E00000 e não $7E0001.
 
-The concept of little-endian is especially important when dealing with “pointers”, which is explained later in this tutorial.
+O conceito de sistema "little-endian" é importante especialmente quando se está manipulando "ponteiros", assunto que será abordado futuramente nesse livro.
 
