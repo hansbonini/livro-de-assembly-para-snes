@@ -1,42 +1,42 @@
 # Armazenando e Gravando
 
-The first thing you definitely should know when starting off with assembly, is how to load and store data using various the SNES registers. The basic opcodes for loading and storing data are `LDA` and `STA`.
+A primeira coisa que definitivamente precisamos aprender para começar a programar para o SNES, é como armazenar e gravar dados usando os diversos registradores do SNES. As instruções básicas para armazenar e gravar são `LDA` e `STA` respectivamente.
 
-As mentioned earlier, there are 3 main registers:
+Como mencionado anteriormente, os 3 registradores principais são:
 
-* A \(the accumulator\)
-* X \(index\)
-* Y \(index\)
+* A \(o acumulador\)
+* X \(indexador\)
+* Y \(indexador\)
 
-Although these registers can be either in 8-bit or 16-bit mode, in this tutorial we will consider them 8-bit by default.
+Todos esses registradores podem trabalhar no modo 8-bit ou no modo 16-bit, por enquanto vamos considerar eles, como estando no modo 8-bit por padrão.
 
 ## LDA and STA
 
-| Opcode | Full name | Explanation |
+| Instrução | Nome Completo | Descrição |
 | :--- | :--- | :--- |
-| **LDA** | Load into accumulator | Load a value into A |
-| **STA** | Store from accumulator | Store A's value into an address |
+| **LDA** | Load into accumulator | Armazena um valor no registrador A |
+| **STA** | Store from accumulator | Grava o valor armazenado em A no endereço especificado |
 
-We will use RAM addresses for the sake of simplicity. Here is an example for loading and storing values.
+Nós usaremos os endereços da RAM pra compreender melhor o funcionamento. É bem simples armazenar e salvar valores.
 
 ```text
 LDA #$03           ; A = $03
 STA $7E0001
 ```
 
-We will look at this code line by line.
+Vamos observar o nosso código linha à linha:
 
 ```text
 LDA #$03
 ```
 
-This loads the value $03 into A. The "\#" means that we're loading an actual value, not an address. After this instruction, the content of the A register is now $03. LDA can load values into A, ranging from $00-$FF in 8-bit mode and $0000-$FFFF in 16-bit mode.
+Aqui armazenamos o valor $03 em A. O "\#" indica que o que estamos armazenando é um valor imediato e não um endereço. Após a execução dessa instrução, o conteudo do registrador A será $03. LDA pode armazenar valores numa faixa de $00-$FF no modo 8-bit e valores numa faixa de $0000-$FFFF no modo 16-bit.
 
 ```text
 STA $7E0001
 ```
 
-This stores A's value into the RAM address $7E0001. Because A's value was $03, RAM address $7E0001's value also is now $03. The contents of the A register is _not_ cleared. This means you can chain multiple stores, like this:
+Aqui gravamos o valor armazenado em A no endereço da RAM $7E0001. Como o valor em A é $03, Oo valor no endereço da RAM $7E0001 também será $03. O conteúdo de A não é resetado. Isso quer dizer que você pode executar sequencias múltiplas desse comando para gravar os valores em mais de um endereço, dessa forma:
 
 ```text
 LDA #$03
@@ -44,19 +44,19 @@ STA $7E0001
 STA $7E0053
 ```
 
-A common beginner's mistake is writing STA \#$7E0001 or any form of "STA \#$". This instruction doesn't exist. It also doesn't make sense; there's no logic behind storing the value of A into another value.
+Um erro muito comum de iniciantes é confundir a notação e escrever STA com "\#$", por exemplo, `STA #$7E0001`. A instrução "STA \#$" não existe. Não faz sentido algum e não tem logica armezar um valor dentro de outro valor.
 
 {% hint style="info" %}
-Remember, using $ instead of \#$ after an opcode means that the parameter is an address, not an immediate value.
+Lembre-se, usar $ ao invés de \#$ após a instrução. Isso quer dizer que o parametro é um endereço e não um valor imediato.
 {% endhint %}
 
-Putting a semicolon \(;\) will allow everything beyond that to be ignored by the assembler, during the assembly of the code. In other words, ; is used to place comments. Example:
+Colocar ponto-e-virgula fará com que tudo que for escrito após ele seja ignorado pelo assemblador. Em outras palavras isso nos permite colocar comentários. Exemplo:
 
 ```text
-LDA #$03           ; This is a comment!
+LDA #$03           ; Aqui está um comentário sobre a linha de código
 ```
 
-### Loading and storing addresses
+### Armazenando e Gravando valores
 
 Of course, what would be the use to store things to a RAM address when you don’t know how to access the address again? You can load a RAM address’ contents into the A register by using LDA with a different addressing mode. Here is an example.
 
