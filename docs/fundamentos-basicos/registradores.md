@@ -44,5 +44,5 @@ O registrador de banco do programa continuamente segue o banco atual de cada ins
 
 ## Contador do Programa
 
-O registrador Contador do Programa **PC** continuamente segue o high byte e o low byte de cada instrução executada. Portanto se você tiver um código executando no endereço $018009, o valor armazenado nesse registrador será $8009.
+O Contador do Programa **PC** continuamente segue o high byte e o low byte de cada instrução executada. Portanto se você tiver um código executando no endereço $018009, o valor armazenado nesse registrador será $8009.
 
