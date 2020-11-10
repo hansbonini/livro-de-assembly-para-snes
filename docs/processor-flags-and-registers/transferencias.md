@@ -1,4 +1,4 @@
-# Transfers
+# Transferencias
 
 Imagine the following situation: You're using the index register X and you'd like to increase it by \#$40. There's `INX` which increases the value in X by one, but what about increasing it by $40? There's no opcode which increases the value in X by $40, [but there is one](../mathemathics-and-logic/arithmetic.md) which increases the value in A by $40. How do you get the value in X into A?
 

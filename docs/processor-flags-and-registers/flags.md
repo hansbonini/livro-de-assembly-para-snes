@@ -1,4 +1,4 @@
-# The processor flags
+# As flags do processador
 
 ## Processor flags
 

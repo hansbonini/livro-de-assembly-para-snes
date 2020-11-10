@@ -1,4 +1,4 @@
-# Changing the processor flags
+# Modificando as flags do processador
 
 As seen in the [previous chapter](flags.md), the SNES supports 9 processor flags. There are ways to affect these processor flags, which are explained in this chapter.
 

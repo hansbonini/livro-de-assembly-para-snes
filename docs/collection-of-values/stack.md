@@ -91,7 +91,7 @@ PLX                ; Restore X. X is now $19 again
 ```
 
 {% hint style="info" %}
-The A, X and Y registers do not have a separate stack. There is only one stack, specified by the 'stack pointer register'. For detailed explanations about the stack pointer register, see: [Stack pointer register](../processor-flags-and-registers/stackpointer.md)
+The A, X and Y registers do not have a separate stack. There is only one stack, specified by the 'stack pointer register'. For detailed explanations about the stack pointer register, see: [Stack pointer register](../processor-flags-and-registers/ponteiro-de-pilha-sp.md)
 {% endhint %}
 
 ## 16-bit mode stack operations

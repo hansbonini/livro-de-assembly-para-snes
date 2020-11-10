@@ -1,4 +1,4 @@
-# Stack pointer register
+# O Registrador de Ponteiro de Pilha \(SP\)
 
 The stack pointer register is a 16-bit register which the processor uses to determine the current stack location in the SNES RAM. After each push, the stack pointer _decreases_, so the bytes are pushed backwards. They overwrite the RAM address’ contents. Conversely, after each pull, the stack pointer _increases_, but the pulled value still remains in the stack. Therefore, a pull is actually a read. The stack pointer increases or decreases by 1 when it deals with an 8-bit value, and by 2 when it deals with a 16-bit value. This can be summarized as follows:
 

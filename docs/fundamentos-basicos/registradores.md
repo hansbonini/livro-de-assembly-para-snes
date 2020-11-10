@@ -28,7 +28,7 @@ A paginação direta é um registrador 16-bit, usado para o modo de endereçamen
 
 ## Ponteiro de Pilha
 
-O ponteiro de pilha é um registrador de 16-bit que armazena o ponteiro da pilha da memória RAM \(explicado posteriormente nesse livro\), relativo ao endereço de memória $0000000. É um registrador que muda dinamicamente conforme você faz o push ou pull \(coloca ou retira seus valores\) na pilha \(explicado posteriormente neste livro\).
+O ponteiro de pilha **SP** é um registrador de 16-bit que armazena o ponteiro da pilha da memória RAM \(explicado posteriormente nesse livro\), relativo ao endereço de memória $0000000. É um registrador que muda dinamicamente conforme você faz o push ou pull \(coloca ou retira seus valores\) no topo da pilha \(explicado posteriormente neste livro\).
 
 ## Estado do Processador
 
@@ -44,5 +44,5 @@ O registrador de banco do programa continuamente segue o banco atual de cada ins
 
 ## Contador do Programa
 
-Esse registrador continuamente segue o high byte e o low byte de cada instrução executada. Portanto se você tiver um código executando no endereço $018009, o valor armazenado nesse registrador será $8009.
+O registrador Contador do Programa **PC** continuamente segue o high byte e o low byte de cada instrução executada. Portanto se você tiver um código executando no endereço $018009, o valor armazenado nesse registrador será $8009.
 

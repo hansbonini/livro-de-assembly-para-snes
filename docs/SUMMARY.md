@@ -30,10 +30,10 @@
 
 ## Processor flags and registers
 
-* [The processor flags](processor-flags-and-registers/flags.md)
-* [Changing the processor flags](processor-flags-and-registers/repsep.md)
-* [Transfers](processor-flags-and-registers/transfer.md)
-* [Stack pointer register](processor-flags-and-registers/stackpointer.md)
+* [As flags do processador](processor-flags-and-registers/flags.md)
+* [Modificando as flags do processador](processor-flags-and-registers/repsep.md)
+* [Transferencias](processor-flags-and-registers/transferencias.md)
+* [O Registrador de Ponteiro de Pilha \(SP\)](processor-flags-and-registers/ponteiro-de-pilha-sp.md)
 
 ## Mathemathics and logic
 
