@@ -17,7 +17,7 @@ Todos esses registradores podem trabalhar no modo 8-bit ou no modo 16-bit, por e
 | **LDA** | Load into accumulator | Armazena um valor no registrador A |
 | **STA** | Store from accumulator | Grava o valor armazenado em A no endereço especificado |
 
-Nós usaremos os endereços da RAM pra compreender melhor o funcionamento. É bem simples armazenar e salvar valores.
+Nós usaremos os endereços da RAM pra compreender melhor o funcionamento. É bem simples armazenar e gravar valores.
 
 ```text
 LDA #$03           ; A = $03
