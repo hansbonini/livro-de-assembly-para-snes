@@ -1,4 +1,4 @@
-# Arithmetic operations
+# Operações Aritiméticas
 
 At some point, you would probably want to _increase_ RAM address $7E000F by $01, but a simple LDA and STA won’t work, because this simply changes the RAM Address’ contents to $01 – not increase it by one. Maybe you'd like to increase it by 2 instead, or even multiply by 2.
 

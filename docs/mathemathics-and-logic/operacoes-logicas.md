@@ -1,4 +1,4 @@
-# Bitwise operations
+# Operações Bitwise
 
 Bitwise operations are fundamental when it comes to assembly. The 65c816 supports several bitwise opcodes, which are explained in this chapter. Bitwise operators mainly work on bits rather than bytes, so in this chapter, vague terms such as `x` and `y` refer to bits rather than bytes.
 

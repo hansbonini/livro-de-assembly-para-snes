@@ -1,6 +1,6 @@
-# Hardware math
+# Cálculos de Hardware
 
-The SNES processor is capable of [basic multiplication and division by 2ⁿ](shift.md), but if you'd like to multiply or divide by other numbers, you'll have to make use of certain SNES hardware registers.
+The SNES processor is capable of [basic multiplication and division by 2ⁿ](operacoes-de-deslocamento-de-bits.md), but if you'd like to multiply or divide by other numbers, you'll have to make use of certain SNES hardware registers.
 
 ## Hardware Unsigned Multiplication
 

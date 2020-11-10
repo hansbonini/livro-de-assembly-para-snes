@@ -31,7 +31,7 @@ The negative flag doesn't affect the behaviour of the SNES. Rather, there are so
 
 ### Overflow flag \(v\)
 
-There are 3 opcodes which affect the overflow flag after a calculation: [`ADC`, `SBC`](../mathemathics-and-logic/arithmetic.md) and [`BIT`](../mathemathics-and-logic/logic.md). For detailed explanations of when the overflow flag is set, see the links.
+There are 3 opcodes which affect the overflow flag after a calculation: [`ADC`, `SBC`](../mathemathics-and-logic/operacoes-aritimeticas.md) and [`BIT`](../mathemathics-and-logic/operacoes-logicas.md). For detailed explanations of when the overflow flag is set, see the links.
 
 The overflow flag doesn't affect the behaviour of the SNES. Rather, there are some branches which make use of the overflow flag.
 

@@ -37,10 +37,10 @@
 
 ## Mathemathics and logic
 
-* [Arithmetic operations](mathemathics-and-logic/arithmetic.md)
-* [Bit shifting operations](mathemathics-and-logic/shift.md)
-* [Bitwise operations](mathemathics-and-logic/logic.md)
-* [Hardware math](mathemathics-and-logic/math.md)
+* [Operações Aritiméticas](mathemathics-and-logic/operacoes-aritimeticas.md)
+* [Operações de Deslocamento de Bits](mathemathics-and-logic/operacoes-de-deslocamento-de-bits.md)
+* [Operações Bitwise](mathemathics-and-logic/operacoes-logicas.md)
+* [Cálculos de Hardware](mathemathics-and-logic/calculos-de-hardware.md)
 
 ## Deep dives
 

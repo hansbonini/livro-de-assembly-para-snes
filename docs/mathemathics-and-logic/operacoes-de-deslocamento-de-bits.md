@@ -1,4 +1,4 @@
-# Bit shifting operations
+# Operações de Deslocamento de Bits
 
 'Bit shifting' is a bitwise operation in which you move bits left or right. As a result, practically speaking, you divide or multiply a number by two.
 
