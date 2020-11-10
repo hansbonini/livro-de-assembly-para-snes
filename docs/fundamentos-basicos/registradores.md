@@ -32,7 +32,7 @@ O ponteiro de pilha **SP** é um registrador de 16-bit que armazena o ponteiro d
 
 ## Estado do Processador
 
-O registrador de estado do processador armazena as flags atuais do processador em formato 8-bit. Existem 8 flags de processador e cada uma ocupa 1 bit. Alterando esse registrador irá alterar o funcionamento de todo o SNES. As flags do processador serão explicadas posteriormente neste livro.
+O registrador de estado do processador **P** armazena as flags atuais do processador em formato 8-bit. Existem 8 flags de processador e cada uma ocupa 1 bit. Alterando esse registrador irá alterar o funcionamento de todo o SNES. As flags do processador serão explicadas posteriormente neste livro.
 
 ## Banco de Dados
 
